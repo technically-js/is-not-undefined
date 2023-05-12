@@ -1,0 +1,49 @@
+{
+  "name": "@technically/is-not-undefined",
+  "version": "0.0.0",
+  "description": "A micro-package to check if a value is not `undefined`. With proper TS typing!",
+  "author": "Ivan Voskoboinyk <ivan@voskoboinyk.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/technically-js/is-not-undefined#readme",
+  "bugs": {
+    "url": "https://github.com/technically-js/is-not-undefined/issues"
+  },
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "type": "commonjs",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "index.mjs",
+    "index.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "default": "./index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technically-js/is-not-undefined.git"
+  },
+  "keywords": [
+    "is-not-undefined",
+    "typescript",
+    "guard"
+  ],
+  "scripts": {
+    "test": "npm run test:commonjs && npm run test:esm && npm run test:types",
+    "test:commonjs": "node test.js",
+    "test:esm": "node test.mjs",
+    "test:types": "tsc --noEmit ./index.d.ts",
+    "release": "np"
+  },
+  "devDependencies": {
+    "np": "^7.7.0",
+    "typescript": "^4.0.0"
+  }
+}

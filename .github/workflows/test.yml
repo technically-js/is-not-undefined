@@ -1,0 +1,26 @@
+name: Test
+on: push
+env:
+  NODE_VERSION: v16
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run:  npm install
+
+      - name: Test CommonJS version
+        run:  npm run test:commonjs
+
+      - name: Test ESM version
+        run:  npm run test:esm
+
+      - name: Test Typescript definitions
+        run:  npm run test:types
