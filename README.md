@@ -2,7 +2,7 @@
 
 [![Test](https://github.com/technically-js/is-not-undefined/actions/workflows/test.yml/badge.svg)](https://github.com/technically-js/is-not-undefined/actions/workflows/test.yml)
 
-`@technically/is-not-undefined` is a micro-package to check if a value is not null. With proper TS typing!
+`@technically/is-not-undefined` is a micro-package to check if a value is not undefined. With proper TS typing!
 
 ## Usage
 
