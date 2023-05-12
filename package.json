@@ -1,6 +1,6 @@
 {
   "name": "@technically/is-not-undefined",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A micro-package to check if a value is not `undefined`. With proper TS typing!",
   "author": "Ivan Voskoboinyk <ivan@voskoboinyk.com>",
   "license": "MIT",
