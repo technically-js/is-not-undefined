@@ -52,4 +52,4 @@ To avoid writing these ad-hoc type-guards every time, I've created this package.
 
 ## Credits
 
-Authored by Ivan Voskoboinyk.
+Authored by [Ivan Voskoboinyk](https://www.voskoboinyk.com/).
